@@ -1,0 +1,9 @@
+{% block conteudo %}
+    <h1>Cadastrar Vitrine:</h1>
+    <form action="{% url 'cadastro-vitrine' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Salvar">
+    </form>
+
+{% endblock %}
