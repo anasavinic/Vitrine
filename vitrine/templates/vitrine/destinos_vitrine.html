@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destinos</title>
+</head>
+<body>
+<p>Veja os destinos disponíveis:</p>
+{% for hotel in hotel %}
+<p>{{ hotel.name }}: {{ hotel.city }} - {{ hotel.country }}</p>
+{% endfor %}
+</body>
+</html>

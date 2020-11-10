@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vitrines</title>
+</head>
+<body>
+<h1>Seja bem-vindo a SBTour</h1>
+<h2>Veja as Vitrines Disponíveis</h2>
+{% for vitrine in vitrine %}
+<p>{{vitrine.title}}</p>
+<p>{{vitrine.subtitle}}</p>
+{% endfor %}
+<p>Veja os Hotéis disponíveis:</p>
+{% for hotel in hotel %}
+<p>{{ hotel.name }}</p>
+<p>{{ hotel.slug }}</p>
+<p>{{ hotel.image }}</p>
+<p>{{ hotel.city }}</p>
+<p>{{ hotel.country }}</p>
+<p>{{ hotel.category }}</p>
+<p>{{ hotel.price }}</p>
+{% endfor %}
+</body>
+</html>

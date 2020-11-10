@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre os Hotéis</title>
+</head>
+<body>
+<p>Veja os detalhes das hospedagens disponíveis:</p>
+{% for sobre in sobre %}
+<p>{{ sobre.name }}</p>
+<p>{{ sobre.slug }}</p>
+<p>{{ sobre.city }} - {{ sobre.country }}</p>
+<p>{{ sobre.category }}</p>
+<p>{{ sobre.price }}</p>
+{% endfor %}
+</body>
+</html>
